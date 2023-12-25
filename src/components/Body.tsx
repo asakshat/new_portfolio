@@ -52,14 +52,14 @@ export default function Body () {
 
             <img
               className="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="../udemy.png"
+              src="src/odin.png"
               alt="udemy"
               width="158"
               height="48"
             />
             <img
               className="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="../odin.png"
+              src="src/odin.png"
               alt="TheOdinProject"
               width="158"
               height="48"
