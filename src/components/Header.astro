@@ -1,11 +1,12 @@
 ---
 import Nav from './Nav'
-const title = Astro.props;
+import {ViewTransitions} from 'astro:transitions';
 
 ---
 
 
 <header>
   <Nav client:load/>
+  <ViewTransitions />
 </header>
 

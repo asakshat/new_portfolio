@@ -89,7 +89,7 @@ export default function Nav() {
                 animate={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -25 }}
                 transition={{ delay: 0.35 }}>
-                <a href=''>
+                <a href='/'>
                 <img src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sshshs.png" alt ="My avatar" className="w-[50px] h-[50px] rounded-full"/>
                 </a>
             </motion.div>

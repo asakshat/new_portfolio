@@ -14,6 +14,7 @@
     "@astrojs/mdx": "^2.0.2",
     "@astrojs/react": "^3.0.8",
     "@astrojs/tailwind": "^5.0.4",
+    "@emailjs/browser": "^3.11.0",
     "@studio-freight/lenis": "^1.0.29",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
@@ -21,6 +22,7 @@
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"
   },
