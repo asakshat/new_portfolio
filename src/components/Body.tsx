@@ -12,14 +12,15 @@ export default function Body () {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-primary">Get Started</button><br></br>
-            <kbd className="kbd">npm</kbd>
+            <button className="btn btn-primary">Get Started</button>
+          
+          </div>
+        </div>
+        <kbd className="kbd">npm</kbd>
             
             <kbd className="kbd">run</kbd>
             
             <kbd className="kbd">build</kbd>
-          </div>
-        </div>
       </div>
 
       <div className="py-24 sm:py-32">
@@ -52,7 +53,7 @@ export default function Body () {
 
             <img
               className="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="public/udemy.png"
+              src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/udemy.png"
               alt="udemy"
               width="158"
               height="48"
