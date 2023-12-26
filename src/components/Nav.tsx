@@ -106,7 +106,7 @@ export default function Nav() {
           animate="visible"
           initial="hidden"
           className="bg-base-300 fixed left-0 top-0  z-40 flex h-screen
-          w-full flex-col items-center  justify-center  gap-24 text-2xl font-bold text-accent"
+          w-full flex-col items-center  justify-center text-2xl font-bold text-accent sm: pb-80"
         >
           <NavLinks
             className="flex flex-col gap-24 text-lg "

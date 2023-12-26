@@ -2,12 +2,16 @@
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import { ViewTransitions } from 'astro:transitions';
+import Body from '@components/Body.tsx'
+import Contact from '@components/contact.astro';
+import ProjectCards from '@components/project_cards.astro';
+
 
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" >
     <meta title="{title}"/>
     <style>
@@ -15,11 +19,14 @@ import { ViewTransitions } from 'astro:transitions';
         scroll-behavior: smooth;
       }
     </style>
-    <ViewTransitions />
   </head>
 
   <body>
     <Header />
+    <Body client:load/>
+    <ProjectCards />
+    <Contact />
+    <Footer />
     <slot />
   </body>
 </html>
