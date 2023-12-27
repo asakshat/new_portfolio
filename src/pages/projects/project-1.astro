@@ -1,18 +1,39 @@
 ---
 import ProjectPostLayout from "@layouts/ProjectPostLayout.astro";
-
 ---
-<ProjectPostLayout client:load title="Event Booking" img="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg" url_github="" url_web="https://sipandscreen.netlify.app/index.html">
-    <h2 class="font-black underline text-2xl p-4 m-5 flex justify-center text-accent">About Project :-</h2>
- <p class="lg:text-xl m-4 p-5 font-bold text-left sm:text-xs flex flex-col gap-5 "> <span class="text-error">(Do add '/index.html' after the website url to view the full functions.    
-    Currently issues regarding webpack and older version packages because i haven't maintained it.) </span><br>
 
-    A small event reservation website. I made this website when my friend asked me for 
-    help to track the number of people who were going to attend the event and could 
-    book before hand. I used cloud Firestore to store data and display into a web-panel.
-    <br>
-    <span>I had Google 0auth enabled but ran into issues regarding url redirects from a 3rd party app browers like instagram and facebook. I tried both the popup and redirect functions provided by Firebase but couldn't get access to the authentication unless the website url was opened through the user's default web-browser. The issues regarding the 0auth login was only found in mobile devices.<br>
-    Ultimately, I had to scrape the login feature because of time contraints and inconsistencies.</span></p>
-</ProjectPostLayout>
-    
+<ProjectPostLayout
+  title="Event Booking"
+  img="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg"
+  url_github=""
+  url_web="https://sipandscreen.netlify.app/index.html"
+/>
+<h2
+  class="font-black underline text-2xl p-4 m-5 flex justify-center text-accent"
+>
+  About Project :-
+</h2>
+<p
+  class="lg:text-xl m-4 p-5 font-bold text-left sm:text-xs flex flex-col gap-5"
+>
+  <span class="text-error"
+    >(Do add '/index.html' after the website url to view the full functions.
+    Currently issues regarding webpack and older version packages because i
+    haven't maintained it.)
+  </span><br />
 
+   A small event reservation website. I made this website when my friend asked me
+  for help to track the number of people who were going to attend the event and could
+  book before hand. I used cloud Firestore to store data and display into a web-panel.
+
+  <br />
+  <span
+    >I had Google 0auth enabled but ran into issues regarding url redirects from
+    a 3rd party app browers like instagram and facebook. I tried both the popup
+    and redirect functions provided by Firebase but couldn't get access to the
+    authentication unless the website url was opened through the user's default
+    web-browser. The issues regarding the 0auth login was only found in mobile
+    devices.<br />
+     Ultimately, I had to scrape the login feature because of time contraints
+    and inconsistencies.</span>
+</p>
