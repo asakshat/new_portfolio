@@ -36,9 +36,7 @@ export default function Body () {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold overflow-hidden">{displayedText}</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+             A passionate and results-driven Web Developer. My journey has equipped me with a diverse skill set, combining technical expertise with a creative approach to web developemnet.
             </p>
             <button className="btn btn-primary"><a href='#project_cards' >Go To Projects</a></button>
             <div className="p-10">
