@@ -1,138 +1,51 @@
 ---
-
+let projects = [
+	{
+		title: 'DopeFlix',
+		link: '/projects/project-2',
+		image:
+			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/MoviesFlix.png',
+		alt: 'movieflix',
+	},
+	{
+		title: 'Event Booking',
+		link: '/projects/project-1',
+		image:
+			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg',
+		alt: 'sip&screen',
+	},
+	{
+		title: 'Old Portfolio',
+		link: '/projects/project-3',
+		image:
+			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/old_porto.png',
+		alt: 'old_portfolio',
+	},
+];
 ---
 
-<style>
-  .card {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
-  }
-</style>
 <div id="project_cards">
-  <div
-    class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center hidden sm:flex"
-  >
-    <h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
-
-    <div class="flex flex-col sm:flex-row gap-4">
-      <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
-        <a href="/projects/project-1">
-          <div class="card-body">
-            <h2 class="card-title justify-center font-normal underline">
-              Event Booking
-            </h2>
-          </div>
-          <figure>
-            <img
-              src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg"
-              alt="sip&screen"
-            />
-          </figure>
-        </a>
-      </div>
-
-      <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
-        <a href="/projects/project-2">
-          <div class="card-body">
-            <h2 class="card-title justify-center font-normal underline">
-              Dice Roll Game
-            </h2>
-          </div>
-          <figure>
-            <img
-              src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/dicev2.png"
-              alt="dice&roll"
-            />
-          </figure>
-        </a>
-      </div>
-
-      <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
-        <a href="/projects/project-3">
-          <div class="card-body">
-            <h2 class="card-title justify-center font-normal underline">
-              Old Portfolio
-            </h2>
-          </div>
-          <figure>
-            <img
-              src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/old_porto.png"
-              alt="old_portfolio"
-              class="h-48 object-cover"
-            />
-          </figure>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="relative overflow-auto lg:flex">
-    <div
-      class="carousel carousel-center max-w p-4 space-x-4 bg-base-300 rounded-box pt-16 relative sm:hidden"
-    >
-      <h2
-        class="text-2xl pt-5 font-extrabold text-gray-900 absolute top-0 ml-5"
-      >
-        My Projects
-      </h2>
-
-      <div class="carousel-item w-96 h-full">
-        <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
-          <a href="/projects/project-1">
-            <div class="card-body">
-              <h2 class="card-title justify-center font-normal underline">
-                Event Booking
-              </h2>
-            </div>
-            <figure>
-              <img
-                src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg"
-                class="h-48 object-cover"
-                alt="Shoes"
-              />
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item w-96 h-full">
-        <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
-          <a href="/projects/project-2">
-            <div class="card-body">
-              <h2 class="card-title justify-center font-normal underline">
-                Dice & Roll
-              </h2>
-            </div>
-            <figure>
-              <img
-                src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/dicev2.png"
-                alt="Dice Roll"
-                class="h-48 object-cover"
-              />
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item w-96 h-full">
-        <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
-          <a href="/projects/project-3">
-            <div class="card-body">
-              <h2 class="card-title justify-center font-normal underline">
-                Old Portfolio
-              </h2>
-            </div>
-            <figure>
-              <img
-                src="https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/old_porto.png"
-                alt="old portfolio"
-                class="h-48 object-cover"
-              />
-            </figure>
-          </a>
-        </div> 
-      </div>
-    </div>
-  </div>
+	<div
+		class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center sm:flex"
+	>
+		<h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
+		<div class="flex flex-col sm:flex-row gap-4">
+			{
+				projects.map((project) => (
+					<div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
+						<a href={project.link}>
+							<div class="card-body">
+								<h2 class="card-title justify-center font-normal underline">
+									{project.title}
+								</h2>
+							</div>
+							<figure>
+								<img src={project.image} alt={project.alt} />
+							</figure>
+						</a>
+					</div>
+				))
+			}
+		</div>
+	</div>
 </div>
