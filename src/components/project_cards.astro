@@ -1,6 +1,20 @@
 ---
 let projects = [
 	{
+		title: 'Blog-Post-Golang',
+		link: '/projects/project-5',
+		image:
+			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/go.png',
+		alt: 'go-blog-post',
+	},
+	{
+		title: 'Chat-App',
+		link: '/projects/project-4',
+		image:
+			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/Lokkerroom.png',
+		alt: 'chat-app',
+	},
+	{
 		title: 'DopeFlix',
 		link: '/projects/project-2',
 		image:
@@ -29,10 +43,10 @@ let projects = [
 		class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center sm:flex"
 	>
 		<h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
-		<div class="flex flex-col sm:flex-row gap-4">
+		<div class="flex flex-wrap gap-4 justify-start items-start">
 			{
 				projects.map((project) => (
-					<div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0">
+					<div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0 transform transition-transform duration-500 ease-in-out hover:scale-90">
 						<a href={project.link}>
 							<div class="card-body">
 								<h2 class="card-title justify-center font-normal underline">
@@ -48,4 +62,4 @@ let projects = [
 			}
 		</div>
 	</div>
-</div>
+</div>x
