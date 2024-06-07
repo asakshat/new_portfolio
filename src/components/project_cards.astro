@@ -43,7 +43,7 @@ let projects = [
 		class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center sm:flex"
 	>
 		<h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
-		<div class="flex flex-wrap gap-4 justify-start items-start">
+		<div class="flex flex-wrap gap-4 items-start justify-center">
 			{
 				projects.map((project) => (
 					<div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0 transform transition-transform duration-500 ease-in-out hover:scale-90">
@@ -57,7 +57,7 @@ let projects = [
 								<img
 									src={project.image}
 									alt={project.alt}
-									class=" w-16 h-16 object-cover"
+									class=" w-80 h-52 object-cover p-2"
 								/>
 							</figure>
 						</a>
