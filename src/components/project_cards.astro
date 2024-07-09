@@ -1,76 +1,76 @@
 ---
 let projects = [
-		{
-		title: 'EventBooking,
-		link: '/projects/project-6',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/goblog.png',
-		alt: 'go-blog-post',
-	},
-	{
-		title: 'Blog-Post-Golang',
-		link: '/projects/project-5',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/goblog.png',
-		alt: 'go-blog-post',
-	},
-	{
-		title: 'Chat-App',
-		link: '/projects/project-4',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/Lokkerroom.png',
-		alt: 'chat-app',
-	},
-	{
-		title: 'DopeFlix',
-		link: '/projects/project-2',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/MoviesFlix.png',
-		alt: 'movieflix',
-	},
-	{
-		title: 'Event Booking',
-		link: '/projects/project-1',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg',
-		alt: 'sip&screen',
-	},
-	{
-		title: 'Old Portfolio',
-		link: '/projects/project-3',
-		image:
-			'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/old_porto.png',
-		alt: 'old_portfolio',
-	},
+        {
+        title: 'EventBooking', // Added missing quote
+        link: '/projects/project-6',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/goblog.png',
+        alt: 'go-blog-post',
+    },
+    {
+        title: 'Blog-Post-Golang',
+        link: '/projects/project-5',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/goblog.png',
+        alt: 'go-blog-post',
+    },
+    {
+        title: 'Chat-App',
+        link: '/projects/project-4',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/Lokkerroom.png',
+        alt: 'chat-app',
+    },
+    {
+        title: 'DopeFlix',
+        link: '/projects/project-2',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/MoviesFlix.png',
+        alt: 'movieflix',
+    },
+    {
+        title: 'Event Booking',
+        link: '/projects/project-1',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/sip%20and%20screen.jpg',
+        alt: 'sip&screen',
+    },
+    {
+        title: 'Old Portfolio',
+        link: '/projects/project-3',
+        image:
+            'https://raw.githubusercontent.com/asakshat/new_portfolio/main/public/old_porto.png',
+        alt: 'old_portfolio',
+    },
 ];
 ---
 
 <div id="project_cards">
-	<div
-		class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center sm:flex"
-	>
-		<h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
-		<div class="flex flex-wrap gap-4 items-start justify-center">
-			{
-				projects.map((project) => (
-					<div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0 transform transition-transform duration-500 ease-in-out hover:scale-90">
-						<a href={project.link}>
-							<div class="card-body">
-								<h2 class="card-title justify-center font-normal underline">
-									{project.title}
-								</h2>
-							</div>
-							<figure>
-								<img
-									src={project.image}
-									alt={project.alt}
-									class=" w-80 h-52 object-cover p-2"
-								/>
-							</figure>
-						</a>
-					</div>
-				))
-			}
-		</div>
-	</div>
-</div>x
+    <div
+        class="hero min-h-screen bg-base-200 p-4 flex flex-col items-center justify-center sm:flex"
+    >
+        <h2 class="text-2xl font-extrabold text-gray-900 pb-20">My Projects</h2>
+        <div class="flex flex-wrap gap-4 items-start justify-center">
+            {
+                projects.map((project) => (
+                    <div class="card w-full sm:w-96 bg-base-100 shadow-xl mb-4 sm:mb-0 transform transition-transform duration-500 ease-in-out hover:scale-90">
+                        <a href={project.link}>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-normal underline">
+                                    {project.title}
+                                </h2>
+                            </div>
+                            <figure>
+                                <img
+                                    src={project.image}
+                                    alt={project.alt}
+                                    class=" w-80 h-52 object-cover p-2"
+                                />
+                            </figure>
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</div>
